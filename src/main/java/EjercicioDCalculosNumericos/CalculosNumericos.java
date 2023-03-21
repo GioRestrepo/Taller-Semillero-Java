@@ -27,11 +27,8 @@ public class CalculosNumericos {
 
     public void calcularLaPendienteDeLaRecta(int x1, int x2, int y1, int y2){
        /*Calcular la pendiente de una recta*/
-        try {
-            int pendiente = (y2-y1)/(x2-x1);
-        }catch (ArithmeticException e){
 
-        }
+        int pendiente = (y2-y1)/(x2-x1);
 
     }
 
@@ -48,11 +45,20 @@ public class CalculosNumericos {
 
     }
 
-    /*.
-     .
-     Calcular las raíces de una ecuación cuadrática.
-     .*/
+    public double[] calcularRaicesCuadradas(double a, double b, double c) {
+        /*Calcular las raíces de una ecuación cuadrática*/
+        double expresion = Math.pow(b, 2) - 4 * a * c;
+        double[] raices = new double[2];
+        if (expresion > 0) {
+            double raiz1 = -b + Math.sqrt(expresion) / (2 * a);
+            //-b + /b^2 - 4 *a*c
+            double raiz2 = -b - Math.sqrt(expresion) / (2 * a);
+            raices = new double[]{raiz1, raiz2};
+            //return raices;
+        }
 
+        return raices;
+    }
     public List<Integer> reverseList(List<Integer> list)
     {
         return IntStream.range(0, list.size())
