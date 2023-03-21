@@ -28,7 +28,7 @@ public class CalculosNumericos {
     public void calcularLaPendienteDeLaRecta(int x1, int x2, int y1, int y2){
        /*Calcular la pendiente de una recta*/
         try {
-            int pendiente = (y1-y2)/(x1-x2);
+            int pendiente = (y2-y1)/(x2-x1);
         }catch (ArithmeticException e){
 
         }
