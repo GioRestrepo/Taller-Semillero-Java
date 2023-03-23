@@ -10,7 +10,7 @@ public class Main {
         System.out.println(res1[0] + ", "+  res1[1]);
         int res2 = calculosNumericos.ConvertirNumeroBaseDiezANumeroBaseB(2576, 9);
         System.out.println(res2);
-        double[] res3 = calculosNumericos.calcularRaicesCuadradas(1,1,11);
+        double[] res3 = calculosNumericos.calcularRaicesCuadradas(1,4,-21);
         System.out.println("Raiz 1 = " + res3[0] + ", "+ "Raiz 2 = " + res3[1]);
     }
 }
