@@ -54,7 +54,7 @@ public class CalculosNumericos {
             raices.add(raizUnica);
             return raices;
         }
-        if (expresion >= 0) {
+        if (expresion > 0) {
 
                 double raiz1 = ((-b) + Math.sqrt(expresion)) / (2 * a);
 
